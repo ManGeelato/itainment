@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import './css/bootswatch.css';
+import React, {useState} from 'react';
+import Navbar from './components/Navbar';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import Home from './components/Home';
+import Favourites from './components/Favourites';
+import Footer from './components/Footer';
 
+// please read Comments.txt file
 function App() {
+  const [favourites, setFavourites] = useState([]);
+  localStorage.setItem('favourites', JSON.stringify(favourites));
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+      <Navbar titleProp="I-TAINMENT" />
+        <Routes>
+          <Route exact path="/" element={<Home favourites={favourites} setFavourites={setFavourites} />} />
+          <Route exact path="/myfavourites" element={<Favourites favourites={favourites} setFavourites={setFavourites} />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

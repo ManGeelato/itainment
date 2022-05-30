@@ -1,0 +1,277 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Is the component working as expected 1`] = `
+Array [
+  <main
+    id="categories"
+  >
+    <h4>
+      Categories
+    </h4>
+    <div
+      className="form-check form-check-inline"
+    >
+      <label
+        className="btn btn-primary"
+        htmlFor="movie"
+        onClick={[Function]}
+      >
+        Movie
+      </label>
+    </div>
+    <div
+      className="form-check form-check-inline"
+    >
+      <label
+        className="btn btn-primary"
+        htmlFor="podcast"
+        onClick={[Function]}
+      >
+        Podcast
+      </label>
+    </div>
+    <div
+      className="htmlForm-check form-check-inline"
+    >
+      <label
+        className="btn btn-primary"
+        htmlFor="music"
+        onClick={[Function]}
+      >
+        Music
+      </label>
+    </div>
+    <div
+      className="htmlForm-check form-check-inline"
+    >
+      <label
+        className="btn btn-primary"
+        htmlFor="audio-book"
+        onClick={[Function]}
+      >
+        Audio-book
+      </label>
+    </div>
+    <div
+      className="htmlForm-check form-check-inline"
+    >
+      <label
+        className="btn btn-primary"
+        htmlFor="short-film"
+        onClick={[Function]}
+      >
+        Short-film
+      </label>
+    </div>
+    <div
+      className="htmlForm-check form-check-inline"
+    >
+      <label
+        className="btn btn-primary"
+        htmlFor="tv-show"
+        onClick={[Function]}
+      >
+        TV-show
+      </label>
+    </div>
+    <div
+      className="htmlForm-check form-check-inline"
+    >
+      <label
+        className="btn btn-primary"
+        htmlFor="software"
+        onClick={[Function]}
+      >
+        Software
+      </label>
+    </div>
+    <div
+      className="htmlForm-check form-check-inline"
+    >
+      <label
+        className="btn btn-primary"
+        htmlFor="e-book"
+        onClick={[Function]}
+      >
+        E-book
+      </label>
+    </div>
+    <div
+      className="htmlForm-check form-check-inline"
+    >
+      <label
+        className="btn btn-primary"
+        htmlFor="all"
+        onClick={[Function]}
+      >
+        All
+      </label>
+    </div>
+  </main>,
+  <form
+    className="form-inline my-2 my-lg-0"
+    id="search"
+  >
+    <input
+      aria-label="Search"
+      className="form-control"
+      onChange={[Function]}
+      placeholder="Search music, films, ebooks, audiobook, movies and many more..."
+      type="search"
+      value=""
+    />
+    <button
+      className="btn btn-outline-success my-2 my-sm-0"
+      id="btnSearch"
+      onClick={[Function]}
+      type="submit"
+    >
+      Search
+    </button>
+  </form>,
+  <div
+    className="card"
+    id="feed"
+  >
+    Your search category will appear here...
+  </div>,
+]
+`;
+
+exports[`getMedia Is Media being fetched from API 1`] = `
+Array [
+  <main
+    id="categories"
+  >
+    <h4>
+      Categories
+    </h4>
+    <div
+      className="form-check form-check-inline"
+    >
+      <label
+        className="btn btn-primary"
+        htmlFor="movie"
+        onClick={[Function]}
+      >
+        Movie
+      </label>
+    </div>
+    <div
+      className="form-check form-check-inline"
+    >
+      <label
+        className="btn btn-primary"
+        htmlFor="podcast"
+        onClick={[Function]}
+      >
+        Podcast
+      </label>
+    </div>
+    <div
+      className="htmlForm-check form-check-inline"
+    >
+      <label
+        className="btn btn-primary"
+        htmlFor="music"
+        onClick={[Function]}
+      >
+        Music
+      </label>
+    </div>
+    <div
+      className="htmlForm-check form-check-inline"
+    >
+      <label
+        className="btn btn-primary"
+        htmlFor="audio-book"
+        onClick={[Function]}
+      >
+        Audio-book
+      </label>
+    </div>
+    <div
+      className="htmlForm-check form-check-inline"
+    >
+      <label
+        className="btn btn-primary"
+        htmlFor="short-film"
+        onClick={[Function]}
+      >
+        Short-film
+      </label>
+    </div>
+    <div
+      className="htmlForm-check form-check-inline"
+    >
+      <label
+        className="btn btn-primary"
+        htmlFor="tv-show"
+        onClick={[Function]}
+      >
+        TV-show
+      </label>
+    </div>
+    <div
+      className="htmlForm-check form-check-inline"
+    >
+      <label
+        className="btn btn-primary"
+        htmlFor="software"
+        onClick={[Function]}
+      >
+        Software
+      </label>
+    </div>
+    <div
+      className="htmlForm-check form-check-inline"
+    >
+      <label
+        className="btn btn-primary"
+        htmlFor="e-book"
+        onClick={[Function]}
+      >
+        E-book
+      </label>
+    </div>
+    <div
+      className="htmlForm-check form-check-inline"
+    >
+      <label
+        className="btn btn-primary"
+        htmlFor="all"
+        onClick={[Function]}
+      >
+        All
+      </label>
+    </div>
+  </main>,
+  <form
+    className="form-inline my-2 my-lg-0"
+    id="search"
+  >
+    <input
+      aria-label="Search"
+      className="form-control"
+      onChange={[Function]}
+      placeholder="Search music, films, ebooks, audiobook, movies and many more..."
+      type="search"
+      value=""
+    />
+    <button
+      className="btn btn-outline-success my-2 my-sm-0"
+      id="btnSearch"
+      onClick={[Function]}
+      type="submit"
+    >
+      Search
+    </button>
+  </form>,
+  <div
+    className="card"
+    id="feed"
+  >
+    Your search category will appear here...
+  </div>,
+]
+`;
