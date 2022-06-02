@@ -3,7 +3,6 @@ import Search from "./Search";
 import Feed from "../components/Feed";
 import Categories from "../components/Categories";
 
-// please read Comments.txt file first
 const Home = ({ favourites, setFavourites }) => {
   const baseURL = "http://localhost:8081";
   const [apiResults, setApiResults] = useState([]);
@@ -31,11 +30,11 @@ const Home = ({ favourites, setFavourites }) => {
       try {
         if (isFilterButtonClick === false) {
           searchResult = await fetch(
-            `${baseURL}/results/?term=` + handleWordSpaces() + search.category
+            `${baseURL}/search/?term=` + handleWordSpaces() + search.category
           );
         } else {
           searchResult = await fetch(
-            `${baseURL}/results/?term=` +
+            `${baseURL}/search/?term=` +
               handleWordSpaces() +
               "&media=" +
               isFilterButtonClick
@@ -76,7 +75,7 @@ const Home = ({ favourites, setFavourites }) => {
         });
         apiResults[index].status = true;
       } else {
-        const favouritesArray = favourites.category(
+        const favouritesArray = favourites.filter(
           (favourite) => favourite !== apiResults[index]
         );
         setFavourites(favouritesArray);
@@ -111,5 +110,11 @@ const Home = ({ favourites, setFavourites }) => {
     </>
   );
 };
-
 export default Home;
+// I then created component called Home, in which I wrote functionality for my application. This include search function which user 
+// uses to search for anything they need. I added the backend url, states for api results and search. The search function works with either searched word or category click.
+// I then created the Category component that utilizes the setSearch state and handleSearch function respectively. For this to work, when user clicks on the category
+// It sets the isFilterButtonClick button to true prompting setSearch state to return the media category in line with what has been clicked. I added className with prop selectCategory, 
+// which is basically a bootstrap button that reads if the button reads movie, podcast or anything else. Now once the user types anything,
+// and clicks the category, it will automatically return the media category in line with what they clicked. 
+

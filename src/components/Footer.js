@@ -1,6 +1,5 @@
 import React from "react";
 
-// please read Comments.txt file first
 const Footer = () => {
   const todayDate = new Date();
   return (
@@ -9,5 +8,5 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;
+// I created Footer component which shows the current year and copyright logo.

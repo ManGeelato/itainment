@@ -106,7 +106,6 @@ body {
   border-style: none;
 }
 
-/* please read Comments.txt file */
 /*My css*/
 #title {
   color: whitesmoke;
@@ -169,22 +168,26 @@ body {
 }
 
 #feed{
-  width: 100%;
+  /* width: 100%; */
   align-items:center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   height: 70vh;
   color: #0f2537;
   overflow-y: auto;
+  /* added the below lines of code for display after first review */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 15px;
+  padding:15px;
 }
 
 #index{
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
   color: #0f2537;
   border: 1px solid #0f2537;
   border-radius: 5px;
@@ -192,11 +195,8 @@ body {
 }
 
 #mediaImage{
-  width:10px;
-  margin: 0px 15px;
-  padding: 10px;
+  padding: 3px;
   border-radius: 6px;
-  font-size:15px;
   transition: all 0.3s ease;
   border: 2px solid whitesmoke;
   border: 1px solid #0f2537;

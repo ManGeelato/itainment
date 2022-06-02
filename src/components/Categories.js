@@ -1,7 +1,6 @@
 import React from "react";
 import "../css/bootswatch.css";
 
-// please read Comments.txt file first
 const Categories = ({ handleCategory, selectCategory }) => {
   return (
     <main id="categories">
@@ -43,9 +42,9 @@ const Categories = ({ handleCategory, selectCategory }) => {
       <div className="htmlForm-check form-check-inline">
         <label
           className={selectCategory}
-          htmlFor="audio-book"
+          htmlFor="audiobook"
           onClick={() => {
-            handleCategory("audioBook");
+            handleCategory("audiobook");
           }}
         >
           Audio-book
@@ -54,7 +53,7 @@ const Categories = ({ handleCategory, selectCategory }) => {
       <div className="htmlForm-check form-check-inline">
         <label
           className={selectCategory}
-          htmlFor="short-film"
+          htmlFor="shortFilm"
           onClick={() => {
             handleCategory("shortFilm");
           }}
@@ -65,7 +64,7 @@ const Categories = ({ handleCategory, selectCategory }) => {
       <div className="htmlForm-check form-check-inline">
         <label
           className={selectCategory}
-          htmlFor="tv-show"
+          htmlFor="tvShow"
           onClick={() => {
             handleCategory("tvShow");
           }}
@@ -87,7 +86,7 @@ const Categories = ({ handleCategory, selectCategory }) => {
       <div className="htmlForm-check form-check-inline">
         <label
           className={selectCategory}
-          htmlFor="e-book"
+          htmlFor="ebook"
           onClick={() => {
             handleCategory("ebook");
           }}
@@ -109,5 +108,7 @@ const Categories = ({ handleCategory, selectCategory }) => {
     </main>
   );
 };
-
 export default Categories;
+// I then created the Categories component that is responsible for rendering those buttons written movie, podcast
+// etc. It works by receiving a prop via handleCategory method and prop selectCategory which is basically a bootstrap variable
+// responsible for picking if user clicked movie, shortFilm or any of those

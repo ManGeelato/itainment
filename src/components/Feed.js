@@ -3,7 +3,6 @@ import "../css/bootswatch.css";
 import { FaHeart } from "react-icons/fa";
 import Card from "react-bootstrap/Card";
 
-// please read Comments.txt file first
 const Feed = ({ apiResults, handleFavourites }) => {
   return (
     <>
@@ -14,8 +13,8 @@ const Feed = ({ apiResults, handleFavourites }) => {
                 <div key={index} id="index">
                   <Card.Img
                     variant="top"
-                    style={{ width: "10rem" }}
-                    src={apiResult.artworkUrl60}
+                    style={{ width: "7rem" }}
+                    src={apiResult.artworkUrl100}
                     alt="Media Image"
                     id="mediaImage"
                   />
@@ -49,5 +48,11 @@ const Feed = ({ apiResults, handleFavourites }) => {
     </>
   );
 };
-
 export default Feed;
+// I then created the Feed component. In this component, I called the apiResults state so when user searches something, the result is fed onto the
+// page automatically. In this component, I utilized the react-bootstrap Card styling so my feed looks nice.I also added custom styles. Now the Feed works as follows:
+// The apiResults prop is called, and it calls apiResults state sitting in Home that has been fed by setApiResults state from that handleSearch functionality.
+// Once called, we map through the data individually using a key set to index. We then use variable apiResult to call the exact
+// variables used by apple for example apiResult.artworkUrl60. This returns a picture of the media we have searched. I used Card.Img to display the picture nicely.
+// We then call the rest of the variables like trackName and artistName etc. All this will be displayed on the page. I then added some functionality for liking and dislikin
+// media using react-icon Fa-Heart.
