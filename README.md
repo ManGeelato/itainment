@@ -41,6 +41,6 @@ Backend/environmemt
 ###Testing
 Application has been tested using Mocha and Chai for back-end and Jest, react-test-renderer for front-end 
 
-###I deployed this app at: 
+###I deployed this app at: https://itainment.herokuapp.com/
 
 Thank You
